@@ -14,9 +14,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 // Configurar DbContext
+/*
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+*/
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseInMemoryDatabase("extra_hours"));
 
 // Registrar repositorios
 builder.Services.AddScoped<IUserRepository, UserRepository>();

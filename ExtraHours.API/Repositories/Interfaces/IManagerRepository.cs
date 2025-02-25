@@ -6,8 +6,8 @@ namespace ExtraHours.API.Repositories.Interfaces
     {
         Task<Manager> GetByIdAsync(long id);
         Task<List<Manager>> GetAllAsync();
-        Task AddAsync(Manager manager);
-        Task UpdateAsync(Manager manager);
+        Task<Manager> AddAsync(Manager manager);
+        Task<Manager> UpdateAsync(long id, Manager manager);
         Task DeleteAsync(long id);
     }
 }
