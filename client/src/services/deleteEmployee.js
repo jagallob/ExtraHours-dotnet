@@ -9,7 +9,7 @@ export const deleteEmployee = async (employeeId) => {
     };
 
     const response = await fetch(
-      `https://localhost:7086/api/employee/${employeeId}`,
+      `https://localhost:5224/api/employee/${employeeId}`,
       options
     );
 

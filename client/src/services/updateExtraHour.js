@@ -10,7 +10,7 @@ export const updateExtraHour = async (registry, updatedValues) => {
     };
 
     const response = await fetch(
-      `https://localhost:7086/api/extra-hour/${registry}/update`,
+      `https://localhost:5224/api/extra-hour/${registry}/update`,
       options
     );
 

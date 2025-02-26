@@ -10,7 +10,7 @@ export const addEmployee = async (employeeData) => {
     };
 
     const response = await fetch(
-      `https://localhost:7086/api/employee`,
+      `https://localhost:5224/api/employee`,
       options
     );
 

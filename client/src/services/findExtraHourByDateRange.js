@@ -7,7 +7,7 @@ export const findExtraHourByDateRange = async (startDate, endDate) => {
     }
 
     const response = await fetch(
-      `https://localhost:7086/api/extra-hour/date-range-with-employee?startDate=${startDate}&endDate=${endDate}`,
+      `https://localhost:5224/api/extra-hour/date-range-with-employee?startDate=${startDate}&endDate=${endDate}`,
       {
         method: "GET",
         headers: {

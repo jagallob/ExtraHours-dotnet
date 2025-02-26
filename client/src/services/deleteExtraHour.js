@@ -1,7 +1,7 @@
 export const deleteExtraHour = async (registry) => {
   try {
     const response = await fetch(
-      `https://localhost:7086/api/extra-hour/${registry}/delete`,
+      `https://localhost:5224/api/extra-hour/${registry}/delete`,
       {
         method: "DELETE",
         headers: {

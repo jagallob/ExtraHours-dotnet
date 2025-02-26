@@ -3,7 +3,7 @@ import axios from "axios";
 export const UserService = {
   login: async (email, password) => {
     try {
-      const response = await fetch("https://localhost:7086/auth/login", {
+      const response = await fetch("http://localhost:5224/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -37,7 +37,7 @@ export const UserService = {
       }
 
       const response = await fetch(
-        `https://localhost:7086/auth/change-password?id=${id}`,
+        `https://localhost:5224/auth/change-password?id=${id}`,
         {
           method: "PUT",
           headers: {
@@ -64,7 +64,7 @@ export const logout = async () => {
   try {
     const token = localStorage.getItem("token");
     const response = await axios.post(
-      "https://localhost:7086/api/logout",
+      "https://localhost:5224/api/logout",
       {},
       {
         headers: {

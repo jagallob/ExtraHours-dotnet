@@ -7,7 +7,7 @@ export const addExtraHour = async (extraHour) => {
     console.log("Enviando a API:", extraHour); // Verificar antes de enviar
 
     const response = await axios.post(
-      "https://localhost:7086/api/extra-hour",
+      "https://localhost:5224/api/extra-hour",
       extraHour,
       {
         headers: {

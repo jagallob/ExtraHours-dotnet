@@ -6,7 +6,7 @@ export const findEmployee = async (id) => {
       throw new Error("No se encontró un token en el almacenamiento local.");
     }
 
-    const response = await fetch(`https://localhost:7086/api/employee/${id}`, {
+    const response = await fetch(`https://localhost:5224/api/employee/${id}`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,

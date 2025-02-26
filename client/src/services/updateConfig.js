@@ -9,7 +9,7 @@ export const updateConfig = async (configData) => {
     }
 
     const response = await axios.put(
-      "https://localhost:7086/api/config",
+      "https://localhost:5224/api/config",
       configData,
       {
         headers: {

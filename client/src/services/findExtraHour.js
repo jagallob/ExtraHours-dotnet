@@ -2,8 +2,8 @@ export const findExtraHour = async (identifier, type = "id") => {
   try {
     const url =
       type === "id"
-        ? `https://localhost:7086/api/extra-hour/id/${identifier}`
-        : `https://localhost:7086/api/extra-hour/registry/${identifier}`;
+        ? `https://localhost:5224/api/extra-hour/id/${identifier}`
+        : `https://localhost:5224/api/extra-hour/registry/${identifier}`;
 
     const token = localStorage.getItem("token");
 
